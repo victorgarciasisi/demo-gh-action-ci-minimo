@@ -27,7 +27,9 @@ jobs:
         with:
           python-version: "3.11"
       - name: Unit tests (unittest)
-        run: python -m unittest discover -s tests -p "test_*.py" -q
+        run: |
+          echo "Error"
+          exit 1
 
   build:
     runs-on: ubuntu-latest
